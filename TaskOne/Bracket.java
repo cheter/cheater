@@ -7,10 +7,10 @@ import java.util.ArrayList;
  */
 public class Bracket {
     private void addParen(ArrayList<String> list, int leftRem, int rightRem, char[] str, int count) {
-        if (leftRem < 0 || rightRem < leftRem) /* invalid statement*/
+        if (leftRem < 0 || rightRem < leftRem) // invalid statement
             return;
 
-        if (leftRem == 0 && rightRem == 0) { /* no more bracket pair remain */
+        if (leftRem == 0 && rightRem == 0) { // no more bracket pair remain 
             String s = String.copyValueOf(str);
             list.add(s);
         } else {
